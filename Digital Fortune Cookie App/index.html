@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Fortune Cookie</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Cookie&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <div class="background-animation"></div>
+        
+        <header>
+            <h1>Digital Fortune Cookie</h1>
+            <p id="greeting">Good day!</p>
+        </header>
+
+        <main>
+            <div class="fortune-cookie" id="cookie">
+                <div class="cookie-top"></div>
+                <div class="cookie-bottom"></div>
+                <div class="fortune-paper" id="fortune">
+                    <p id="message">Click the cookie to reveal your fortune</p>
+                </div>
+            </div>
+
+            <div class="controls">
+                <select id="content-type">
+                    <option value="all">Any Type</option>
+                    <option value="quote">Inspirational Quote</option>
+                    <option value="motivation">Motivational Message</option>
+                    <option value="joke">Developer Joke</option>
+                </select>
+                <button id="new-fortune">New Fortune</button>
+                <button id="share-btn">Share</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>Come back tomorrow for a new message!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
